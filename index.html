@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasmitha M | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-glow: #FFFBF0;
+            --bg-outer: #F5F5DC;
+            --brown: #6F4E37;
+            --dark-brown: #3E2723;
+            --text: #333;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth; /* Makes clicking links smooth */
+        }
+
+        body {
+            background: radial-gradient(circle at center, var(--bg-glow) 0%, var(--bg-outer) 100%);
+            color: var(--text);
+        }
+        .card p {
+    text-align: justify;   /* Makes both left and right edges aligned */
+    line-height: 1.5;     /* keeps it readable */
+      }
+        /* --- Navigation --- */
+        nav {
+            position: fixed;
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 10%;
+            background: rgba(255, 251, 240, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 100px 10% 50px;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+        .hero-text {
+    /* Keeps the text on the left of its container */
+    text-align: left; 
+    /* Prevents the paragraph from getting too wide */
+    max-width: 500px; 
+}
+
+.hero-text p {
+    /* Adds vertical space between lines for a 'neat' look */
+    line-height: 1.6; 
+    /* Ensures the text stays a professional dark grey */
+    color: #444; 
+}
+        
+        .image-container {
+            width: 300px;
+            height: 350px;
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+            border: 3px solid var(--brown);
+            overflow: hidden;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* --- Content Sections --- */
+        section {
+            padding: 80px 10%;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            color: var(--dark-brown);
+            font-size: 2rem;
+            border-bottom: 2px solid var(--brown);
+            display: inline-block;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            border: 1px solid var(--brown);
+        }
+
+        /* --- Contact Icons --- */
+        .social-links a {
+            margin: 0 15px;
+            color: var(--brown);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Hasmitha's Portfolio</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="image-container"><img src="image.jpeg" alt="Hasmitha M"></div>
+        <div class="hero-text">
+            <h2>Hey I'm Hasmitha M </h2>
+            <p><h1>Aspiring Data Analyst</h1></p>
+            <p>  A pre-final year Data Analytics student passionate about transforming data into actionable insights. Experienced in projects like student sleep analysis and Amazon sales analysis using Power BI, with hands-on internship experience in data analytics."</p>
+            <a href="HASMITHA.RESUME.pdf" class="card" style="display:inline-block; margin-top:20px; text-decoration:none; color:var(--brown)">Download CV</a>
+        </div>
+    </section>
+
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="grid">
+            <div class="card"><h3>B.SC CS WITH DA (2024-2027)</h3><p>Sankara college of science and commerce,coimbatore</p></div>
+            <div class="card"><h3>HSC (2022-2024)</h3><p>R.K.Sree rangammal kalvi nilayam,coimbatore</p></div>
+        </div>
+      </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="grid">
+            <div class="card"><h3>Excel</h3><p>Data Cleaning & Pivot Tables</p></div>
+            <div class="card"><h3>SQL</h3><p>Data querying</p></div>
+            <div class="card"><h3>Power BI</h3><p>Visualizing Insights</p></div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="grid">
+            <div class="card"><h3>Amazon Sales Analysis</h3><p>Analyzed sales data to identify trends, top selling products and proformance insights using excel and BI</p></div>
+            <div class="card"><h3>Student Sleep Analysis</h3><p>Studied student sleep patterns and screen time, visualized insights in BI to highlight correlations and habits</p></div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Experience </h2>
+        <div class="grid">
+            <div class="card"><h3>Data Analyst Intern @innobyteservice</h3><p>Worked as a Data Analyst Intern where I collected, cleaned, and analyzed real-world datasets to generate meaningful insights. Built interactive dashboards using Power BI and performed data preprocessing in Excel and SQL. Contributed to projects like Amazon Sales Analysis by identifying trends, improving reporting accuracy, and supporting data-driven decision-making.</p></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/hasmitha-m-09269134a">LinkedIn</a>
+            <a href="https://github.com/hasumusic">GitHub</a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=hhasmi459@gmail.com" target="_blank">Email</a>
+        </div>
+    </section>
+
+</body>
+</html>
